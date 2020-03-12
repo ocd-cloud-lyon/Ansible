@@ -1,6 +1,5 @@
 ---
-
-- hosts: all
-  gather_facts: false
+- hosts: localhost
   tasks:
-    - ping:
+    - name: Print message
+      debug: msg="Hello from Ansible!!"
